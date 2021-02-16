@@ -37,13 +37,6 @@ local function crud_get_schema()
     return uniq_spaces
 end
 
-function get_frames(from, to)
-    return crud.select('frame', {
-        { '>=', 'primary', from },
-        { '<', 'primary', to }
-    })
-end
-
 local function init(opts)
     -- some clutches for springdata
     rawset(_G, 'crud_get_schema', crud_get_schema)
