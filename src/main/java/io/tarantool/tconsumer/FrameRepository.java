@@ -8,9 +8,6 @@ import java.util.List;
 
 public interface FrameRepository extends TarantoolRepository<Frame, FrameId> {
 
-//    @Query(function="get_frames")
-//    List<Frame> getFrames(Integer from, Integer to);
-
     @Query(function="crud.select")
     List<Frame> getFrames(String frame, List<?> conditions);
 }

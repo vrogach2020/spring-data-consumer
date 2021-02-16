@@ -4,11 +4,12 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.tarantool.core.mapping.Tuple;
 
 @Tuple("frame")
-public class Frame
-{
-    // This is a stub (composite keys will be implemented soon..)
+public class Frame {
+    //This is a stub for composite keys. They will be implemented soon..
     @Id
-    FrameId id; //x,y
+    FrameId frameId;
 
+    Integer x;
+    Integer y;
     String sym;
 }

@@ -30,6 +30,7 @@ public class ConsoleOutService {
                             .toProxyQuery(tarantoolClient.metadata(),
                                     tarantoolClient.metadata().getSpaceByName("frame").get()));
 
+
             frames.forEach(f -> System.out.print(f.sym));
 
             lastY++;
